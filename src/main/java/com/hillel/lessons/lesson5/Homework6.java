@@ -91,10 +91,13 @@ public class Homework6 {
         double firstTeamAverageKills = (firstTeamPlayer1 + firstTeamPlayer2 + firstTeamPlayer3 + firstTeamPlayer4 + firstTeamPlayer5) / 5;
         double secondTeamAverageKills = (secondTeamPlayer1 + secondTeamPlayer2 + secondTeamPlayer3 + secondTeamPlayer4 + secondTeamPlayer5) / 5;
 
+        int firstTeamTotalKills = firstTeamPlayer1 + firstTeamPlayer2 + firstTeamPlayer3 + firstTeamPlayer4 + firstTeamPlayer5;
+        int secondTeamTotalKills = secondTeamPlayer1 + secondTeamPlayer2 + secondTeamPlayer3 + secondTeamPlayer4 + secondTeamPlayer5;
+
         if(firstTeamAverageKills > secondTeamAverageKills) {
-            System.out.println("Перемогла команда " + firstTeamName + " набрала " + firstTeamAverageKills + " очків ");
+            System.out.println("Перемогла команда " + firstTeamName + " набрала " + firstTeamTotalKills + " очків ");
         } else if(firstTeamAverageKills < secondTeamAverageKills) {
-            System.out.println("Перемогла команда " + secondTeamName + " набрала " + secondTeamAverageKills + " очків ");
+            System.out.println("Перемогла команда " + secondTeamName + " набрала " + secondTeamTotalKills + " очків ");
         } else {
             System.out.println("Рахунок обох команд рівний");
         }
