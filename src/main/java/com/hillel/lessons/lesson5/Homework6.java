@@ -88,8 +88,8 @@ public class Homework6 {
         }
         int secondTeamPlayer5 = scanner.nextInt();
 
-        double firstTeamAverageKills = (firstTeamPlayer1 + firstTeamPlayer2 + firstTeamPlayer3 + firstTeamPlayer4 + firstTeamPlayer5) / 5;
-        double secondTeamAverageKills = (secondTeamPlayer1 + secondTeamPlayer2 + secondTeamPlayer3 + secondTeamPlayer4 + secondTeamPlayer5) / 5;
+        double firstTeamAverageKills = (firstTeamPlayer1 + firstTeamPlayer2 + firstTeamPlayer3 + firstTeamPlayer4 + firstTeamPlayer5) / 5.0;
+        double secondTeamAverageKills = (secondTeamPlayer1 + secondTeamPlayer2 + secondTeamPlayer3 + secondTeamPlayer4 + secondTeamPlayer5) / 5.0;
 
         int firstTeamTotalKills = firstTeamPlayer1 + firstTeamPlayer2 + firstTeamPlayer3 + firstTeamPlayer4 + firstTeamPlayer5;
         int secondTeamTotalKills = secondTeamPlayer1 + secondTeamPlayer2 + secondTeamPlayer3 + secondTeamPlayer4 + secondTeamPlayer5;

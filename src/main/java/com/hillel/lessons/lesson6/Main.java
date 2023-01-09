@@ -223,12 +223,28 @@ public class Main {
 //        System.out.println("NO ");
 
 
-        int a = 141;
-        int b = 14;
-        int c = 25;
-        int d = 25;
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("b % a = " + (a % b));
-        System.out.println("c % d = " + (c % d));
+        int randomNumber = (int) (Math.random() * 11);
+        int userValue = 0;
+
+        System.out.println("Угадай число от 0 до 10");
+
+        while (true) {
+            if(scanner.hasNextInt()) {
+                userValue = scanner.nextInt();
+                break;
+            } else if (userValue >= -11) {
+                System.out.println("Укажи число меньше");
+                scanner.nextInt();
+            } else if (userValue <= -1) {
+                System.out.println("Укажи число больше");
+                scanner.nextInt();
+            } else {
+                System.out.println("Неправильный тип данных, введи число");
+                scanner.nextLine();
+            }
+        }
+
     }
 }

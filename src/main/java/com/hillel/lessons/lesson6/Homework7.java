@@ -15,6 +15,7 @@ public class Homework7 {
         while (true) {
             if(scanner.hasNextInt()) {
                 userValue = scanner.nextInt();
+                scanner.nextLine();
                 break;
             } else {
                 System.out.println("Неправильный тип данных, введи число");
@@ -32,13 +33,30 @@ public class Homework7 {
                 break;
             } else if (userValue > randomNumber) {
                 System.out.println("К сожалению вы не угадали число,загаданное число меньше");
-                userValue = scanner.nextInt();
+                while (true) {
+                    if (scanner.hasNextInt()) {
+                        userValue = scanner.nextInt();
+                        scanner.nextLine();
+                        break;
+                    } else {
+                        System.out.println("Неправильный тип данных, введи число");
+                        scanner.nextLine();
+                    }
+                }
             } else {
                 System.out.println("К сожалению вы не угадали число,загаданное число больше");
-                userValue = scanner.nextInt();
+                while (true) {
+                    if (scanner.hasNextInt()) {
+                        userValue = scanner.nextInt();
+                        scanner.nextLine();
+                        break;
+                    } else {
+                        System.out.println("Неправильный тип данных, введи число");
+                        scanner.nextLine();
+                    }
+                }
             }
         }
-
 
     }
 }
