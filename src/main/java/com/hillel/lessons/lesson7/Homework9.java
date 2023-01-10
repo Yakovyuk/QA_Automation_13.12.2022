@@ -13,12 +13,25 @@ public class Homework9 {
             secondTeam[i] = 18 + (int) (Math.random() * 23);
         }
 
-        System.out.println("Возраст игроков первой команды");
-        System.out.println(Arrays.toString(firstTeam));
+
+        System.out.print("Возраст игроков первой команды: ");
+        for (int i = 0; i < firstTeam.length; i++) {
+            if (firstTeam.length - 1 == i) {
+                System.out.print(firstTeam[i] + ". ");
+            } else {
+                System.out.print(firstTeam[i] + ", ");
+            }
+        }
 
         System.out.println();
-        System.out.println("Возраст игроков второй команды");
-        System.out.println(Arrays.toString(secondTeam));
+        System.out.print("Возраст игроков второй команды: ");
+        for (int i = 0; i < secondTeam.length; i++) {
+            if (firstTeam.length - 1 == i) {
+                System.out.print(secondTeam[i] + ". ");
+            } else {
+                System.out.print(secondTeam[i] + ", ");
+            }
+        }
 
         int firstTeamSumAge = 0;
         for (int value : firstTeam) {
