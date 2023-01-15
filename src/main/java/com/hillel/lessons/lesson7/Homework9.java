@@ -49,7 +49,6 @@ public class Homework9 {
 
 
         double secondTeamAverageAge = (double) secondTeamSumAge / secondTeam.length;
-        System.out.println();
         System.out.println("Средний возраст игроков второй команды " + secondTeamAverageAge);
     }
 }
