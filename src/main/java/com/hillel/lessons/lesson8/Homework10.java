@@ -53,29 +53,24 @@ public class Homework10 {
         }
 
 
-        int[][] array2 = new int[m][n];
+        int[][] array2 = new int[array1.length][];
+        for(int i = 0; i < array1.length; i++){
+            array2[i] = array1[i].clone();
+        }
+
+
         int temp = 0;
-
-//        int count;
-//
-//        if (m == n) {
-//            count = m;
-//        } else if(m < n) {
-//            count = n - m;
-//        } else {
-//            count = m - n;
-//        }
-
-        for (int i = 0; i < array1.length; i++) {
-            if (array1.length < i){
+        for (int i = 0; i < array2.length; i++) {
+            if (array2.length - 1 == i){
                 break;
             }
-            for (int j = i; j < array1[i].length; j++) {
-                System.out.println("array1: " + Arrays.deepToString(array1) + "\n");
-                temp = array1[i][j];
-                array2[i][j] = array1[j][i];
+            for (int j = i; j < array2.length; j++) {
+                if (j >= array2[j].length) {
+                    continue;
+                }
+                temp = array2[i][j];
+                array2[i][j] = array2[j][i];
                 array2[j][i] = temp;
-                System.out.println("array2: " + Arrays.deepToString(array2) + "\n");
             }
         }
 
@@ -87,6 +82,7 @@ public class Homework10 {
             }
             System.out.println();
         }
+
 
     }
 }
