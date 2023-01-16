@@ -1,5 +1,6 @@
 package com.hillel.lessons.lesson8;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Homework10 {
@@ -55,14 +56,30 @@ public class Homework10 {
         int[][] array2 = new int[m][n];
         int temp = 0;
 
+//        int count;
+//
+//        if (m == n) {
+//            count = m;
+//        } else if(m < n) {
+//            count = n - m;
+//        } else {
+//            count = m - n;
+//        }
+
         for (int i = 0; i < array1.length; i++) {
+            if (array1.length < i){
+                break;
+            }
             for (int j = i; j < array1[i].length; j++) {
+                System.out.println("array1: " + Arrays.deepToString(array1) + "\n");
                 temp = array1[i][j];
                 array2[i][j] = array1[j][i];
                 array2[j][i] = temp;
+                System.out.println("array2: " + Arrays.deepToString(array2) + "\n");
             }
         }
 
+        System.out.println();
         System.out.println("array2");
         for (int i = 0; i < array2.length; i++) {
             for (int j = 0; j < array2[i].length; j++) {

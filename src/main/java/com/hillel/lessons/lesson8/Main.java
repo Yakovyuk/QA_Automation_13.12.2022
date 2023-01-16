@@ -92,51 +92,69 @@ public class Main {
 
 //
 //        int[][][] array = new int[3][2][4];
-        int[][][] array = {
-                {
-                        {18, 28, 18, 28},
-                        {45, 90, 45, 0}
-                },
-                {
-                        {7, 125, 500, 5},
-                        {0, 11, 25, 30}
-                },
-                {
-                        {81, 17, 19, 55},
-                        {1, 7, 38, 11}
-                }
-        };
+//        int[][][] array = {
+//                {
+//                        {18, 28, 18, 28},
+//                        {45, 90, 45, 0}
+//                },
+//                {
+//                        {7, 125, 500, 5},
+//                        {0, 11, 25, 30}
+//                },
+//                {
+//                        {81, 17, 19, 55},
+//                        {1, 7, 38, 11}
+//                }
+//        };
+//
+//        System.out.println(array.length);
+//
+//        System.out.println(array[0].length);
+//        System.out.println(array[1].length);
+//        System.out.println(array[2].length);
+//
+//        System.out.println(array[0][0].length);
+//        System.out.println(array[0][1].length);
+//
+//
+//        System.out.println(array[2][0][0]);
+//        System.out.println(array[2][0][1]);
+//        System.out.println(array[2][0][2]);
+//        System.out.println(array[2][0][3]);
+//
+//
+//        System.out.println(Arrays.deepToString(array));
+//        System.out.println();
+//        System.out.println();
+//
+//        for (int i = 0; i < array.length; i++) {
+//            for (int j = 0; j < array[i].length; j++) {
+//                for (int k = 0; k < array[i][j].length; k++) {
+//                    System.out.print(array[i][j][k] + "\t");
+//                }
+//                System.out.println();
+//            }
+//            System.out.println();
+//        }
 
-        System.out.println(array.length);
+        int[][] array = new int[3][4];
 
-        System.out.println(array[0].length);
-        System.out.println(array[1].length);
+        array[0][0] = 77;
+        array[0][1] = 2;
+        array[0][2] = 5;
+        array[0][3] = 6;
+
+        array[1][0] = 7;
+        array[1][1] = 6;
+        array[1][2] = 10;
+        array[1][3] = 13;
+
+        array[2][0] = 11;
+        array[2][1] = 5;
+        array[2][2] = 3;
+        array[2][3] = 4;
+
         System.out.println(array[2].length);
-
-        System.out.println(array[0][0].length);
-        System.out.println(array[0][1].length);
-
-
-        System.out.println(array[2][0][0]);
-        System.out.println(array[2][0][1]);
-        System.out.println(array[2][0][2]);
-        System.out.println(array[2][0][3]);
-
-
-        System.out.println(Arrays.deepToString(array));
-        System.out.println();
-        System.out.println();
-
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                for (int k = 0; k < array[i][j].length; k++) {
-                    System.out.print(array[i][j][k] + "\t");
-                }
-                System.out.println();
-            }
-            System.out.println();
-        }
-
 
 
 
