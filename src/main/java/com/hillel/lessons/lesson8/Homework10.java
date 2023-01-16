@@ -1,6 +1,5 @@
 package com.hillel.lessons.lesson8;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Homework10 {
