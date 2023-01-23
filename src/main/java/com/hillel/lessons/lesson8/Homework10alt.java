@@ -2,7 +2,7 @@ package com.hillel.lessons.lesson8;
 
 import java.util.Scanner;
 
-public class Homework10 {
+public class Homework10alt {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -60,11 +60,24 @@ public class Homework10 {
         }
 
 
-        int[][] array2 = new int[n][m];
+        int[][] array2 = new int[array1.length][];
+        for(int i = 0; i < array1.length; i++){
+            array2[i] = array1[i].clone();
+        }
 
+
+        int temp = 0;
         for (int i = 0; i < array2.length; i++) {
-            for (int j = 0; j < array2[i].length; j++) {
-                array2[i][j] = array1[j][i];
+            if (array2.length - 1 == i){
+                break;
+            }
+            for (int j = i; j < array2.length; j++) {
+                if (j >= array2[j].length) {
+                    continue;
+                }
+                temp = array2[i][j];
+                array2[i][j] = array2[j][i];
+                array2[j][i] = temp;
             }
         }
 
