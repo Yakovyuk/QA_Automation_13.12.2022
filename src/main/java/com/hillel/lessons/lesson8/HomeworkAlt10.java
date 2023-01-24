@@ -2,7 +2,7 @@ package com.hillel.lessons.lesson8;
 
 import java.util.Scanner;
 
-public class Homework10alt {
+public class HomeworkAlt10 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
