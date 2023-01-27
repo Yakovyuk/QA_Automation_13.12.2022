@@ -1,8 +1,8 @@
-package com.hillel.lessons.lesson11.Homework12;
+package com.hillel.lessons.lesson11.Homework13;
 
-public class Androids extends Characteristics implements Smartphones, LinuxOS {
+public class IPhones extends Characteristics implements Smartphones, IOS {
 
-    public Androids(String name, String system, double versionSystem) {
+    public IPhones(String name, String system, double versionSystem) {
         this.name = name;
         this.system = system;
         this.versionSystem = versionSystem;
@@ -24,12 +24,12 @@ public class Androids extends Characteristics implements Smartphones, LinuxOS {
     }
 
     @Override
-    public void getOperatingSystemAndroid() {
+    public void getOperatingSystemIOS() {
         System.out.println("На " + name + " установлена операционная система " + system);
     }
 
     @Override
-    public void getOperatingVersionAndroid() {
+    public void getOperatingVersionIOS() {
         System.out.println("Версия операционной системы " + system + " - " + versionSystem);
     }
 }
